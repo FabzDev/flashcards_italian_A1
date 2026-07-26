@@ -1,38 +1,29 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Italiano Flashcards</title>
-    <link rel="stylesheet" href="italiano.css">
+    <link rel="stylesheet" href="italian.css">
 </head>
 
 <body>
     <main class="page-shell">
         <section class="hero">
             <span class="eyebrow">Italiano interactivo</span>
-            <h1>Tarjetas de vocabulario A2</h1>
+            <h1>Tarjetas de vocabulario A1</h1>
             <p class="subtitle">Repasa verbos, conectores y expresiones clave con una interfaz moderna y ligera.</p>
         </section>
 
         <section class="wrap card-shell">
-            <div class="card-header">
-                <div>
-                    <p class="card-title">Tarjeta actual</p>
-                    <p id="progress" class="progress" aria-live="polite"></p>
-                </div>
-                <span class="hint">Usa las flechas o los botones para navegar</span>
-            </div>
-
             <div class="card">
                 <div id="q" class="word" aria-live="polite"></div>
                 <div id="a" class="ans" aria-live="polite"></div>
             </div>
 
-            <div class="row button-row">
-                <button type="button" class="btn btn-secondary" id="show">Mostrar respuesta</button>
-                <button type="button" class="btn btn-secondary" id="speak">🔊 Pronunciar</button>
+            <div class="progress-row">
+                <p id="progress" class="progress" aria-live="polite"></p>
             </div>
 
             <div class="row button-row">
@@ -40,15 +31,9 @@
                 <button type="button" class="btn btn-accent" id="med">😐 Dudé</button>
                 <button type="button" class="btn btn-accent" id="hard">😫 Difícil</button>
             </div>
-
-            <div class="row button-row">
-                <button type="button" class="btn btn-primary" id="prev">⬅ Anterior</button>
-                <button type="button" class="btn btn-primary" id="shuffle">🔀 Aleatorio</button>
-                <button type="button" class="btn btn-primary" id="next">Siguiente ➡</button>
-            </div>
         </section>
     </main>
-    <script src="italiano.js"></script>
+    <script src="italian.js"></script>
 </body>
 
 </html>
