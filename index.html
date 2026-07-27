@@ -20,6 +20,19 @@
             <div class="card">
                 <div id="q" class="word" aria-live="polite"></div>
                 <div id="a" class="ans" aria-live="polite"></div>
+                <div id="sentence-area" class="sentence-area" aria-live="polite" style="display:none;">
+                    <!-- When no sentence saved: show textarea + save button. When saved: show sentence and edit button. -->
+                    <div id="sentence-edit" style="display:none;">
+                        <textarea id="sentence-input" class="premium-textarea" rows="2" placeholder="Escribe una oración con la palabra en italiano..."></textarea>
+                        <div>
+                            <button type="button" class="btn" id="save-sentence">Guardar</button>
+                        </div>
+                    </div>
+                    <div id="sentence-view" style="display:none;">
+                        <input id="sentence-text" class="readonly-input" readonly type="text" />
+                        <button type="button" class="btn" id="edit-sentence">Editar</button>
+                    </div>
+                </div>
             </div>
 
             <div class="progress-row">
